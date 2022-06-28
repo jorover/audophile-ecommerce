@@ -1,0 +1,173 @@
+#seperator {
+  margin: 50px 0px;
+}
+
+.addToCartContent {
+  border: 1px solid #eee;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px auto;
+}
+
+.cartCounting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.addToCartImg {
+  width: fit-content;
+}
+
+.addToCartImg img {
+  max-width: 100px;
+}
+
+.addToCartContent figure {
+  width: 20%;
+}
+
+.addToCartContent article:nth-child(2) {
+  width: 25%;
+}
+
+.addToCartContent div:nth-child(3) {
+  width: fit-content;
+}
+
+.addToCartContent article:nth-child(4) {
+  width: 10%;
+}
+
+.addToCartContent article:nth-child(5) {
+  width: 5%;
+  font-size: 1.4rem;
+  color: #d94a4a;
+}
+
+.cartCounting {
+  background: #eee;
+}
+
+.cartCounting button,
+.cartCounting p {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+}
+
+.cartCounting button:nth-child(1),
+.cartCounting button:nth-child(3) {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cartCounting button:nth-child(1):hover,
+.cartCounting button:nth-child(3):hover {
+  background: rgb(122, 122, 122);
+  color: #fff;
+}
+
+.del {
+  cursor: pointer;
+}
+
+.cartSummary {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.cartTotalDetails p,
+.cartTotalDetails h3,
+.cartTotalDetails button {
+  margin: 10px 0px;
+}
+
+.continue button {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 1.05rem;
+  padding: 7px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.continue button:hover {
+  border-bottom: 0.8px solid #000;
+}
+
+.continue a {
+  color: #000;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.no-Cart {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.no-Cart .continue {
+  margin: 20px auto;
+}
+
+.itemCount {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .addToCartContent,
+  .cartSummary {
+    flex-direction: column;
+  }
+
+  .addToCartContent {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .addToCartContent figure,
+  .addToCartContent article:nth-child(2),
+  .btn,
+  .continue,
+  .cartTotalDetails,
+  .cartPrice,
+  .addToCartContent article:nth-child(4) {
+    width: 100%;
+  }
+
+  .continue,
+  .cartPrice,
+  .addToCartContent article:nth-child(4) {
+    text-align: center;
+  }
+
+  .cartItemName,
+  .cartPrice {
+    margin: 20px 0px;
+  }
+}

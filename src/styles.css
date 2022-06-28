@@ -1,0 +1,698 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;500&family=Open+Sans:ital,wght@0,300;1,500&family=Poppins&family=Raleway:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;*/
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.navBarContainer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  min-height: 70px;
+}
+
+.navBarContent,
+.navBarList,
+.showCase,
+.earphoneContainer,
+.footerShowcaseContainer,
+.featuresContainer,
+.innerFooterContent {
+  display: flex;
+}
+
+.navBarContent,
+.navBarList,
+.showCase,
+.earphoneContainer,
+.innerFooterContent {
+  align-items: center;
+}
+
+.navBarContent,
+.navBarList,
+.earphoneContainer,
+.footerShowcaseContainer,
+.featuresContainer,
+.innerFooterContent {
+  justify-content: space-between;
+}
+
+.navBarContent {
+  padding: 20px 0px;
+}
+
+.compLogo,
+.cartContainer,
+.navBarList {
+  width: fit-content;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li,
+.compLogo h3 {
+  cursor: pointer;
+}
+
+.navBarList li {
+  margin: 15px;
+}
+
+.compLogo h3,
+.innerMenu h3 {
+  font-size: 1.8rem;
+  letter-spacing: 1.7px;
+}
+
+.cartCounter,
+.btn {
+  background: #d94a4a;
+}
+
+.heroSection,
+.footerShowcaseContainer,
+.innerEachProducts,
+.checkOutContainer {
+  width: 100vw;
+  min-height: 650px;
+}
+
+.showCase {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 2.7rem;
+  line-height: 1.4;
+}
+
+.btn {
+  padding: 15px 25px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.productContent,
+.showCaseContent {
+  color: #fff;
+}
+
+.showCaseContent {
+  width: 75%;
+}
+
+.productContent,
+.miniContent {
+  float: right;
+  width: 50%;
+}
+
+.productContent {
+  margin: 100px 0px;
+}
+
+.productContent h4 {
+  color: rgb(161, 161, 161);
+}
+
+.productContent h4,
+.showCaseContent h4 {
+  font-size: 1.6rem;
+}
+
+.textBtn {
+  position: relative;
+  top: 35px;
+}
+
+.productContent h4,
+.productContent p {
+  color: rgb(161, 161, 161);
+}
+
+.productContent p,
+.productContent a,
+.showCaseContent p,
+.productDisplayContent h2,
+.productDisplayContent a {
+  margin: 20px 0px;
+}
+
+.productContent h4 {
+  letter-spacing: 4px;
+  line-height: 1.4;
+}
+
+.productContent a,
+.productDisplayContent a {
+  transition: 0.3s ease-in-out;
+}
+
+.productContent a:hover,
+.productDisplayContent a:hover {
+  background: #ff9b9b;
+}
+
+.showCaseContainer {
+  min-height: 500px;
+  background: #ff7070;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.showCaseContainer,
+.miniDisplayContainer,
+.footerShowcaseContainer {
+  margin-top: 50px;
+}
+
+.showCaseContainer img {
+  max-width: 200px;
+}
+
+.showCaseContent a {
+  background: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.showCaseContent a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.miniDisplayContainer {
+  min-height: 350px;
+}
+
+.miniDisplay {
+  background: url("./assets/ss.jpg") no-repeat center center/cover;
+  min-height: 300px;
+  border-radius: 20px;
+}
+
+.miniContent,
+.earphoneDisplay {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.miniContent h2,
+.earphoneDisplay h2 {
+  font-size: 2rem;
+}
+
+.miniContent a,
+.earphoneDisplay a {
+  margin: 10px 0px;
+  background: none;
+  border: 1.5px solid #000;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.miniContent a:hover,
+.earphoneDisplay a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.earphoneBg,
+.earphoneContainer img {
+  width: 47%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.earphoneBg {
+  background: #eee;
+}
+
+.productDisplayContent h4 {
+  color: #d94a4a;
+  font-size: 1.2rem;
+  font-weight: unset;
+}
+
+.displayLeft {
+  float: left;
+}
+
+.innerProductsContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+  place-items: center;
+  margin: 50px 0px;
+}
+
+.productDisplayContent {
+  width: 90%;
+  margin: auto;
+}
+
+.productDisplayContent h2 {
+  font-size: 2.3rem;
+}
+
+.innerProductsContainer img {
+  max-width: 400px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control input {
+  padding: 15px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.form-control h4 {
+  margin-top: 30px;
+  color: #d94a4a;
+  font-weight: unset;
+}
+
+.form-control label {
+  margin: 20px 0px;
+}
+
+.footerShowcaseContent {
+  width: 45%;
+}
+
+.footerShowcaseContainer img {
+  width: 50%;
+  height: 570px;
+  border-radius: 20px;
+}
+
+.innerFooterShowcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerShowcaseContent h1 {
+  font-size: 3rem;
+}
+
+#footerNavBar {
+  display: none;
+}
+
+.xx99One,
+.xx59One,
+.xx9One,
+.zx9One,
+.zx7One,
+.yxOne {
+  width: 67%;
+  min-height: 550px;
+  border-radius: 20px;
+}
+
+.xx99One {
+  background: url("./assets/i0.jpeg") no-repeat center center/cover;
+}
+
+.xx59One {
+  background: url("./assets/i3.jpg") no-repeat center center/cover;
+}
+
+.xx9One {
+  background: url("./assets/i6.jpg") no-repeat center center/cover;
+}
+
+.zx9One {
+  background: url("./assets/i9.jpg") no-repeat center center/cover;
+}
+
+.zx7One {
+  background: url("./assets/i12.jpg") no-repeat center center/cover;
+}
+
+.yxOne {
+  background: url("./assets/i15.jpeg") no-repeat center center/cover;
+}
+
+.xx99Two,
+.xx59Two,
+.xx9Two,
+.zx9Two,
+.zx7Two,
+.yxTwo {
+  width: 30%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.xx99Three,
+.xx59Three,
+.xx9Three,
+.zx9Three,
+.zx7Three,
+.yxThree {
+  width: 100%;
+  min-height: 270px;
+  border-radius: 20px;
+}
+
+.xx99Three {
+  background: url("./assets/i1.jpeg") no-repeat center center/cover;
+}
+
+.xx59Three {
+  background: url("./assets/i4.jpg") no-repeat center center/cover;
+}
+
+.xx9Three {
+  background: url("./assets/i7.jpeg") no-repeat center center/cover;
+}
+
+.zx9Three {
+  background: url("./assets/i10.jpeg") no-repeat center center/cover;
+}
+
+.zx7Three {
+  background: url("./assets/i13.jpeg") no-repeat center center/cover;
+}
+
+.yxThree {
+  background: url("./assets/i16.jpeg") no-repeat center center/cover;
+}
+
+.xx99Four,
+.xx59Four,
+.xx9Four,
+.zx9Four,
+.zx7Four,
+.yxFour {
+  width: 100%;
+  min-height: 270px;
+  border-radius: 20px;
+}
+
+.xx99Four {
+  background: url("./assets/i2.jpeg") no-repeat center center/cover;
+}
+
+.xx59Four {
+  background: url("./assets/i5.jpg") no-repeat center center/cover;
+}
+
+.xx9Four {
+  background: url("./assets/i8.jpg") no-repeat center center/cover;
+}
+
+.zx9Four {
+  background: url("./assets/i1.jpeg") no-repeat center center/cover;
+}
+
+.zx7Four {
+  background: url("./assets/i14.jpeg") no-repeat center center/cover;
+}
+
+.yxFour {
+  background: url("./assets/i17.jpeg") no-repeat center center/cover;
+}
+
+@media (max-width: 1050px) {
+  .innerFooterShowcase {
+    flex-direction: column;
+  }
+  .xx99One,
+  .xx59One,
+  .xx9One,
+  .zx9One,
+  .zx7One,
+  .yxOne,
+  .xx99Two,
+  .xx59Two,
+  .xx9Two,
+  .zx9Two,
+  .zx7Two,
+  .yxTwo {
+    width: 100%;
+  }
+
+  .xx99Two,
+  .xx59Two,
+  .xx9Two,
+  .zx9Two,
+  .zx7Two,
+  .yxTwo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .xx99Three,
+  .xx59Three,
+  .xx9Three,
+  .zx9Three,
+  .zx7Three,
+  .yxThree,
+  .xx99Four,
+  .xx59Four,
+  .xx9Four,
+  .zx9Four,
+  .zx7Four,
+  .yxFour {
+    width: 47.5%;
+    margin-top: 20px;
+  }
+
+  .footerShowcaseContent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerShowcaseContent p {
+    width: 70%;
+    margin: auto;
+  }
+
+  .footerShowcaseContainer img {
+    width: 70%;
+    border-radius: 20px;
+    margin: 50px 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .innerProductsContainer img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 850px) {
+  .productContent {
+    float: unset;
+    margin: 100px auto;
+    text-align: center;
+  }
+
+  .innerProductsContainer img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showCase,
+  .innerFooterContent {
+    flex-direction: column;
+  }
+
+  .showCaseContent {
+    margin: auto;
+    text-align: center;
+  }
+
+  .showCase img {
+    margin-top: 70px;
+  }
+
+  .earphoneContainer {
+    flex-direction: column;
+  }
+
+  .earphoneBg,
+  .earphoneContainer img {
+    width: 80%;
+  }
+
+  .earphoneContainer img {
+    margin-top: 30px;
+  }
+
+  .miniDisplay {
+    background: #eee;
+  }
+
+  .miniContent {
+    float: left;
+    width: 100%;
+  }
+
+  .innerProductsContainer {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .innerProductsContainer img {
+    max-width: 350px;
+    margin-top: 50px;
+  }
+
+  .displayLeft,
+  .displayLeft a {
+    transform: translateY(-70px);
+    width: 100%;
+  }
+
+  .footerShowcaseContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .footerShowcaseContent p {
+    width: 90%;
+  }
+
+  .footerShowcaseContainer img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .productContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .xx99Two,
+  .xx59Two,
+  .xx9Two,
+  .zx9Two,
+  .zx7Two,
+  .yxTwo {
+    flex-direction: column;
+  }
+
+  .xx99Three,
+  .xx59Three,
+  .xx9Three,
+  .zx9Three,
+  .zx7Three,
+  .yxThree,
+  .xx99Four,
+  .xx59Four,
+  .xx9Four,
+  .zx9Four,
+  .zx7Four,
+  .yxFour {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .productContent {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .showCaseContent {
+    width: 90%;
+  }
+
+  .showCase img {
+    max-width: 130px;
+  }
+
+  .earphoneBg .earphoneContainer img {
+    width: 100%;
+  }
+
+  .miniContent h2,
+  .earphoneDisplay h2 {
+    font-size: 1.2rem;
+  }
+
+  .innerProductsContainer img {
+    max-width: 250px;
+  }
+
+  .footerShowcaseContent h1 {
+    font-size: 1.7rem;
+  }
+
+  .footerShowcaseContent p {
+    width: 100%;
+  }
+
+  .footerShowcaseContainer img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 355px) {
+  .productDisplayContent h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  .footerShowcaseContainer img {
+    display: none;
+  }
+}

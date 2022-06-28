@@ -1,0 +1,46 @@
+footer {
+  background: #000;
+  min-height: 300px;
+  color: #fff;
+}
+
+.innerFooter {
+  width: 50%;
+}
+
+.innerFooter p {
+  color: rgb(161, 161, 161);
+  font-size: 1.105rem;
+}
+
+.innerFooter p:nth-child(1) {
+  margin: 20px 0px;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .navBarContent {
+    flex-direction: column;
+  }
+
+  .innerFooterContent article,
+  .innerFooterContent figure {
+    width: 100%;
+    text-align: center;
+  }
+
+  .innerFooterContent figure {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navBarList {
+    flex-direction: column;
+  }
+}

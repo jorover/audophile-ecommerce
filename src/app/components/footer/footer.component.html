@@ -1,0 +1,27 @@
+<footer>
+    <nav class="navBarContainer">
+        <div class="container navBarContent">
+            <article class="compLogo">
+                <h3><a routerLink="/">audophile </a> </h3>
+            </article>
+            <ul class="navBarList">
+                <li class="activebutton"><a routerLink='' routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}"> HOME </a></li>
+                <li class="activebutton"><a routerLink='/headphones' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> HEADPHONES </a></li>
+                <li class="activebutton"><a routerLink='/speakers' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> SPEAKERS </a></li>
+                <li class="activebutton"><a routerLink='/earphones' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> EARPHONES </a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container innerFooterContent">
+        <article class="innerFooter">
+            <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+            <p> Copyright 2022 &copy; All Rights Reserved</p>
+        </article>
+
+        <figure class="socials">
+            <img [src]="fb" alt="fb-logo">
+            <img [src]="tw" alt="tw-logo">
+            <img [src]="ig" alt="ig-logo">
+        </figure>
+    </section>
+</footer>

@@ -1,0 +1,15 @@
+<section [class]="featuresContainer">
+    <article [class]="featuresContent">
+        <h2> {{ features.title.toUpperCase() }} </h2>
+        <p> {{ features.featureDetails }}</p>
+    </article>
+
+    <aside [class]="featuresContent">
+        <h2> {{ features.box }} </h2>
+        <p><a>{{ features.oneTime }}</a> {{ features.headphone }} </p>
+        <p><a>{{ features.twoTimes }}</a> {{ features.replacement }} </p>
+        <p><a>{{ features.threeTimes }}</a> {{ features.user }} </p>
+        <p><a>{{ features.fourTimes }}</a> {{ features.productSize }} </p>
+        <p><a>{{ features.fiveTimes }}</a> {{ features.bag }} </p>
+    </aside>
+</section>

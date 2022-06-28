@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+
+<section class="container">
+    <div class="goBack">
+        <a [routerLink]="routerLink"> GO BACK </a>
+    </div>
+    <app-products-display 
+    [products]="productsDetails" 
+    [display]="display"
+    [imgOne]="imgOne"
+    [imgAltOne]="imgAltOne"></app-products-display>
+    <app-features [features]="featuresDetails"></app-features>
+    <app-feature-images [featureImages]="featuresImages"></app-feature-images>
+</section>
+
+
+<app-category></app-category>
+<app-footer-showcase></app-footer-showcase>
+<app-footer></app-footer>
+
+
+
+
+

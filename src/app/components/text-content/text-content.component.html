@@ -1,0 +1,30 @@
+
+    <article [class]="products.productContent" *ngIf="products.seeProduct else showCart">
+        <h4> {{  products.productTopText }} </h4>
+        <h2> {{ products.productDetails }} </h2>
+        <p> {{ products.productText }} </p>
+        <a class="btn textBtn" [routerLink]="products.routerLink" (click)="check(products.productDetails)"> {{ products.productBtn }}</a>
+    </article>
+
+    <ng-template #showCart>
+        <article [class]="products.productContent">
+            <h4> {{  products.productTopText }} </h4>
+            <h2> {{ products.productDetails }} </h2>
+            <p> {{ products.productText }} </p>
+            <h1> $ {{ products.price }} </h1>
+            <div class="cartCountContainer">
+             <div class="cartCounting">
+                    <button (click)="counter($event)"> - </button>
+                    <p> {{ cartCount }} </p>
+                    <button (click)="counter($event)"> + </button>
+                </div>
+            <a class="btn textBtn"(click)="addToCart(products, cartCount, $event)" > {{ products.productBtn }} </a>
+         </div>
+        </article>
+    </ng-template>  
+
+
+
+
+
+<router-outlet></router-outlet>

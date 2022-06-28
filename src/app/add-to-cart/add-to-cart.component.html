@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <h2> Shopping Cart </h2>
+    <p class="itemCount"> You have {{ itemCount }} {{ item }} in your shopping cart </p>
+    <section class="addToCartContainer" *ngIf="showCart else emptyCart">
+        <section *ngFor="let cartItem of cartItems" class="addToCartContent">
+            <figure class="addToCartImg cartInnerContent">
+                <img [src]="cartItem.img"  [alt]="cartItem.name">
+            </figure>
+
+            <article class="cartItemName cartInnerContent">
+                <small>  Item Title </small>
+                <h4> {{ cartItem.name }} </h4>
+            </article>
+
+            <article class="cartCounting cartInnerContent" >
+                <button (click)="counter($event, cartItem)"> - </button>
+                <p class="cartAmount"> {{ cartItem.amount }} </p>
+                <button (click)="counter($event, cartItem)"> + </button>
+            </article>
+
+            <article class="cartInnerContent cartPrice">
+                <h1> ${{ cartItem.price }} </h1>
+            </article>
+
+            <article class="cartInnerContent">
+                <p class="del"(click)="delItems(cartItem)"> x </p>
+             </article>
+        </section>  
+
+        <section class="cartSummary">
+            <article class="continue">
+                <button><a routerLink="/headphones"> << Continue Shopping </a></button>
+            </article>
+
+            <aside class="cartTotalDetails">
+                <article class="cartTotal">
+                    <p> SubTotal:</p>
+                    <small> ${{ totalItems.subtotal }} </small>
+                </article>
+
+                <article class="cartTotal">
+                    <p> Shipping Cost:</p>
+                    <small> {{ totalItems.shippingCost }} </small>
+                </article>
+
+                <article class="cartTotal">
+                    <p> VAT:</p>
+                    <small> {{ totalItems.vat }} </small>
+                </article>
+
+                <article class="cartTotal">
+                    <h3> Grand Total: </h3>
+                    <h3> ${{ totalItems.grandTotal }} </h3>
+                </article>
+
+                <button class="btn"> <a routerLink="/checkout"> PROCEED TO CHECKOUT </a></button>
+            </aside>
+    
+        </section>
+    </section>
+
+    <ng-template #emptyCart>
+        <div class="no-Cart">
+            <h3> Your Cart is Empty </h3>
+            <article class="continue">
+                <button><a routerLink="/headphones"> << Start Shopping </a></button>
+            </article>
+        </div>
+    </ng-template>
+</div>
+
+
+
+<app-category></app-category>
+<div id="seperator"></div>
+<app-footer></app-footer>

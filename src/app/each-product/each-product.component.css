@@ -1,0 +1,12 @@
+.goBack {
+  margin-top: 30px;
+}
+
+a {
+  color: rgb(119, 119, 119);
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}

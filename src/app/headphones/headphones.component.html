@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <app-products-display 
+    [products]="headphoneOne" 
+    [display]="display"
+    [imgOne]="imgOne"
+    [imgAltOne]="imgAltOne"></app-products-display>
+    <app-products-display 
+    [products]="headphoneTwo" 
+    [display]="nextDisplay"
+    [imgTwo]="imgTwo"
+    [imgAltTwo]="imgAltTwo"></app-products-display>
+    <app-products-display 
+    [products]="headphoneThree" 
+    [display]="display"
+    [imgThree]="imgThree"
+    [imgAltThree]="imgAltThree"></app-products-display>
+</div>
+
+<app-category></app-category>
+<app-footer-showcase></app-footer-showcase>
+<app-footer></app-footer>
+
+<router-outlet></router-outlet>
+
+
+

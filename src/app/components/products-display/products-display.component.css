@@ -1,0 +1,13 @@
+.secondDisplay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .secondDisplay {
+    display: grid;
+  }
+
+  .firstDisplay {
+    display: none;
+  }
+}

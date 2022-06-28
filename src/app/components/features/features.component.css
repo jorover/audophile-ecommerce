@@ -1,0 +1,33 @@
+.featuresContainer {
+  margin: 50px 0px;
+}
+
+a {
+  color: #d94a4a;
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.featuresContent:nth-child(1) {
+  width: 70%;
+}
+
+.featuresContent p {
+  margin: 15px 0px;
+  font-size: 1.15rem;
+  font-weight: unset;
+  color: rgb(161, 161, 161);
+}
+
+@media (max-width: 1050px) {
+  .featuresContainer {
+    flex-direction: column;
+  }
+
+  .featuresContent:nth-child(1) {
+    width: 100%;
+  }
+}

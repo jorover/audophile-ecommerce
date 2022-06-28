@@ -1,0 +1,22 @@
+.cash {
+  margin-top: 20px;
+}
+
+[value*="e-Money"]::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+}
+
+.innerForm-control {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+}
+
+.innerForm-control label {
+  margin-left: 15px;
+}

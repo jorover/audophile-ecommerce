@@ -1,0 +1,17 @@
+
+    <figure *ngIf="display else nextDisplay" class="innerProductsContainer">
+        <img [src]="imgOne || imgThree" [alt]="imgAltOne || imgAltThree">
+        <app-text-content [products]="products"></app-text-content>
+    </figure>
+
+    <ng-template #nextDisplay>
+        <figure class="innerProductsContainer firstDisplay">
+            <app-text-content [products]="products"></app-text-content>
+            <img [src]="imgTwo" [alt]="imgAltTwo">
+        </figure>
+
+        <figure class="innerProductsContainer secondDisplay">
+            <img [src]="imgTwo" [alt]="imgAltTwo">
+            <app-text-content [products]="products"></app-text-content>
+        </figure>
+    </ng-template>

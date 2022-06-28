@@ -1,0 +1,11 @@
+.featureImagesContainer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 550px;
+}
+
+@media (max-width: 1050px) {
+  .featureImagesContainer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="container categoryContainer">
+    <figure *ngFor="let item of items" [class]="categoryContent">
+        <img [src]="item.imgs" alt="category-logo">
+        <figcaption [class]="categoryBg" >    
+            <h4> {{ item.header }} </h4>
+            <button><a (click)="removeGlobal" [routerLink]="item.routerLink">{{ item.itemBtn }}</a> <small> > </small></button>
+        </figcaption>
+    </figure>
+</div>
+
+
+
+

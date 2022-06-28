@@ -1,0 +1,34 @@
+<nav class="navBarContainer">
+    <div class="container navBarContent">
+        <article class="compLogo">
+            <h3><a routerLink="/">audophile </a> </h3>
+        </article>
+        <ul class="navBarList">
+            <li class="activebutton"><a routerLink='' routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}"> HOME </a></li>
+            <li class="activebutton"><a routerLink='/headphones' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> HEADPHONES </a></li>
+            <li class="activebutton"><a routerLink='/speakers' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> SPEAKERS </a></li>
+            <li class="activebutton"><a routerLink='/earphones' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> EARPHONES </a></li>
+        </ul>
+
+        <div class="innerMenu">
+            <img [src]="menu" alt="menu-logo" (click)="removeMenu()">
+            <h3 class="innerLink"><a routerLink="/">audiophile </a></h3>
+        </div>
+
+        <figure class="cartContainer" [id]="footerNav">
+            <img [src]="cartLink" alt="cart-logo" [class]="cartLogo" routerLink="/cart">
+            <p [class]="cartCounter"> {{ cartCount }} </p>
+        </figure>
+    </div> 
+
+    <div [class]="dropDownMenu">
+        <div class="container">
+            <ul class="navBarList">
+                <li class="activebutton" (click)="removeSideMenu()"><a routerLink='' routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}"> HOME </a></li>
+                <li class="activebutton" (click)="removeSideMenu()"><a routerLink='/headphones' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> HEADPHONES </a></li>
+                <li class="activebutton" (click)="removeSideMenu()"><a routerLink='/speakers' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> SPEAKERS </a></li>
+                <li class="activebutton" (click)="removeSideMenu()"><a routerLink='/earphones' routerLinkActive="activebutton" ariaCurrentWhenActive="page"> EARPHONES </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

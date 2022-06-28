@@ -1,0 +1,90 @@
+h1 {
+  font-size: 1.8rem;
+  padding-top: 10px;
+}
+
+.cartCountContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.cartCounting {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+}
+
+.cartCounting button,
+.cartCounting p {
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.cartCounting button:nth-child(1),
+.cartCounting button:nth-child(3) {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cartCounting button:nth-child(1):hover,
+.cartCounting button:nth-child(3):hover {
+  background: rgb(122, 122, 122);
+  color: #fff;
+}
+
+.cartCountContainer .textBtn {
+  top: 0;
+  margin-left: 20px;
+}
+
+@media (max-width: 1020px) {
+  .cartCounting button,
+  .cartCounting p {
+    background: none;
+    border: none;
+  }
+
+  .cartCounting button,
+  .cartCounting p,
+  .cartCountContainer a {
+    padding: 10px 15px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .cartCountContainer a {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartCountContainer {
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .cartCountContainer {
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  .cartCounting,
+  .cartCountContainer a {
+    width: 100%;
+  }
+
+  .cartCountContainer .textBtn {
+    margin-left: 0px;
+  }
+}

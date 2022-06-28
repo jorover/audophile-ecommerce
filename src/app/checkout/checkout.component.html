@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<section class="checkOutContainer">
+    <div class="container checkOutContent">
+        <form class="checkOutForm"> 
+            <h2> CHECKOUT </h2>
+            <app-input [formDetails]="formOneDetails"></app-input>
+            <app-input [formDetails]="formTwoDetails"></app-input>
+            <app-payment-input [formDetails]="formThreeDetails" ></app-payment-input>
+        </form>
+
+        <aside class="orderSummaryContainer">
+            <h3> SUMMARY </h3>
+            <app-order-summary></app-order-summary>
+        </aside>
+    </div>
+</section>
+
+
+<app-footer></app-footer>

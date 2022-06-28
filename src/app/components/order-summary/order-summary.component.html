@@ -1,0 +1,23 @@
+
+<section class="orderContainer">
+    <section *ngFor="let sum of orderSummary" class="orderContent">
+        <figure class="orderImgContent">
+            <img [src]="sum.img"  />
+            <figcaption>
+                <h5> {{ sum.name }} </h5>
+                <p> ${{ sum.price }} </p>
+            </figcaption>
+        </figure>
+
+        <aside class="orderNum">
+            <h4> X {{ sum.amount }} </h4>
+        </aside>
+    </section>
+
+    <footer>
+        <h1> GRAND TOTAL: </h1>
+        <p> ${{ grandTotal }}</p>
+    </footer>
+
+    <button class="btn"> CONTINUE & PAY </button>
+</section>
